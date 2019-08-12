@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
 import axios from "axios";
-import CurrentLocation from "./components/CurrentLocation";
 import EnterCity from "./components/EnterCity";
 import Map from "./components/Map";
 import Card1Day from "./components/Card1Day";
@@ -10,9 +9,8 @@ import Loader from "react-loader-spinner";
 import LocAndTime from "./components/LocAndTime";
 import AppBar from "./components/AppBar";
 
-const API_URL = "http://api.apixu.com/v1/forecast.json?key=229bbedfd358402289383456192204";
+const API_URL = "https://api.apixu.com/v1/forecast.json?key=229bbedfd358402289383456192204";
 const IMAGE_KEY = "12292065-237546a1a299f2c430ac14530";
-
 
 class App extends Component {
   state = {
@@ -94,7 +92,7 @@ class App extends Component {
           date: data.forecast.forecastday[0].date,
         })
       })
-  }
+  };
 
 
   updateWeatherAndImage = () => {

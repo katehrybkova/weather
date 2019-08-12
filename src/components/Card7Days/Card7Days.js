@@ -14,7 +14,7 @@ const styles = {
 };
 
 function Card7Days(props) {
-    const { classes, forecastDays } = props;
+    const { forecastDays } = props;
     return (
         <div className="flex7days">
             {forecastDays.map(el => (
