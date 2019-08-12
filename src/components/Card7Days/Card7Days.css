@@ -1,0 +1,11 @@
+.flex7days {
+    display:flex;
+    justify-content: space-around;
+    width:100%;
+    color: gray;
+
+}
+.oneCard {
+    text-align: center;
+    width:200px;
+}
